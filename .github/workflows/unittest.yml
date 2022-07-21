@@ -1,0 +1,51 @@
+name: Python Unittest
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    container: maswag/spot-python
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install required packages
+      run: |
+        apt-get update
+        apt-get install software-properties-common nodejs zlib1g-dev cmake -y
+        apt-get install swig ccache xvfb python3-opengl -y
+        apt-get install maven -y
+
+    - name: install openjdk-8
+      run: |
+        wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-key add -
+        add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
+        apt-get update && apt-get install adoptopenjdk-8-hotspot -y
+
+    - name: Python pip cache
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Cache local Maven repository
+      uses: actions/cache@v2
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements-sb.txt
+      
+    - name: Build Java gateway
+      run: cd java && mvn package
+
+    - name: Run unittest
+      run: |
+        java -jar ./java/target/learnlib-py4j-example-1.0-SNAPSHOT.jar &
+        cd python && python -m unittest -v 

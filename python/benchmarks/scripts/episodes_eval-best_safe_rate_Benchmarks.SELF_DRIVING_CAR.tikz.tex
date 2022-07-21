@@ -1,0 +1,90 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Episodes [\(\displaystyle \times 100\)]},
+xmin= 7.13, xmax=79.11,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Safe Rate},
+ymin= 0.02, ymax= 1.05,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+12.53  0.13
+20.95  0.13
+26.99  0.17
+31.84  0.17
+35.99  0.33
+39.68  0.43
+43.07  0.53
+46.24  0.63
+49.29  0.67
+52.19  0.70
+55.00  0.80
+57.70  0.83
+60.36  0.87
+62.94  0.97
+65.50  0.97
+68.01  0.97
+70.48  1.00
+72.93  1.00
+75.36  1.00
+};
+\addplot [very thick, color1]
+table {%
+12.39  0.07
+20.71  0.10
+26.75  0.10
+31.66  0.17
+35.86  0.30
+39.57  0.37
+42.99  0.50
+46.22  0.57
+49.32  0.67
+52.31  0.73
+55.19  0.80
+57.97  0.90
+60.68  0.93
+63.34  0.93
+65.92  0.93
+68.45  0.97
+70.95  0.97
+73.41  0.97
+75.84  1.00
+};
+\addplot [very thick, color2]
+table {%
+10.41  0.10
+17.65  0.13
+23.43  0.20
+28.20  0.37
+32.23  0.43
+35.81  0.63
+39.11  0.77
+42.21  0.87
+45.16  0.87
+47.98  0.97
+50.70  0.97
+53.33  0.97
+55.92  1.00
+58.46  1.00
+60.97  1.00
+63.43  1.00
+65.88  1.00
+68.28  1.00
+70.67  1.00
+};
+\end{axis}
+
+\end{tikzpicture}

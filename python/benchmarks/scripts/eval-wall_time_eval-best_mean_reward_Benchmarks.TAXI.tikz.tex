@@ -1,0 +1,93 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Wall Time [\(\displaystyle \times 10\)]},
+xmin=-1.56, xmax=64.09,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Reward [\(\displaystyle \times 10\)]},
+ymin=-10.41, ymax=-4.32,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 1.43 -10.14
+ 3.12 -10.11
+ 4.82 -10.09
+ 6.50 -9.70
+ 8.17 -9.33
+ 9.85 -8.61
+11.52 -8.25
+13.20 -8.25
+14.74 -7.86
+16.44 -7.86
+18.15 -7.86
+19.87 -7.85
+21.59 -7.49
+23.31 -7.15
+25.05 -7.14
+26.79 -7.14
+28.52 -7.14
+30.09 -7.14
+31.83 -7.14
+33.54 -7.14
+};
+\addplot [very thick, color1]
+table {%
+ 1.46 -10.12
+ 3.24 -10.07
+ 5.02 -9.66
+ 6.78 -8.93
+ 8.55 -7.47
+10.31 -7.11
+12.08 -7.09
+13.85 -6.37
+15.45 -6.35
+17.22 -5.96
+19.01 -5.96
+20.78 -5.60
+22.57 -5.59
+24.35 -5.23
+26.14 -5.21
+27.93 -5.21
+29.72 -5.21
+31.36 -5.21
+33.13 -5.20
+34.92 -5.19
+};
+\addplot [very thick, color2]
+table {%
+ 3.55 -10.00
+ 8.28 -10.00
+12.43 -8.93
+15.79 -7.13
+19.07 -6.08
+22.58 -5.69
+25.32 -5.32
+28.21 -4.97
+31.17 -4.60
+34.08 -4.60
+36.44 -4.60
+38.80 -4.60
+41.27 -4.60
+43.89 -4.60
+47.15 -4.60
+50.92 -4.60
+53.58 -4.60
+55.98 -4.60
+58.55 -4.60
+61.10 -4.60
+};
+\end{axis}
+
+\end{tikzpicture}

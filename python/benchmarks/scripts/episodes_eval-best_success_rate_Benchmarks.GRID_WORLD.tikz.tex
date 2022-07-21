@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Episodes [\(\displaystyle \times 1000\)]},
+xmin= 1.12, xmax=12.11,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Success Rate},
+ymin=-0.04, ymax= 0.87,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 2.52  0.00
+ 3.76  0.03
+ 4.76  0.36
+ 5.69  0.58
+ 6.61  0.63
+ 7.52  0.68
+ 8.43  0.72
+ 9.31  0.74
+10.19  0.76
+11.06  0.77
+};
+\addplot [very thick, color1]
+table {%
+ 2.55  0.00
+ 3.85  0.06
+ 4.92  0.34
+ 5.92  0.60
+ 6.90  0.71
+ 7.87  0.77
+ 8.83  0.80
+ 9.77  0.82
+10.70  0.82
+11.61  0.83
+};
+\addplot [very thick, color2]
+table {%
+ 1.61  0.00
+ 2.64  0.04
+ 3.54  0.26
+ 4.33  0.46
+ 5.07  0.55
+ 5.75  0.58
+ 6.41  0.61
+ 7.03  0.63
+ 7.65  0.64
+ 8.25  0.65
+};
+\end{axis}
+
+\end{tikzpicture}

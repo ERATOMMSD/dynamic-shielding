@@ -1,0 +1,93 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Episodes [\(\displaystyle \times 100\)]},
+xmin=-1.82, xmax=94.90,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Reward [\(\displaystyle \times 10\)]},
+ymin=-10.37, ymax=-2.18,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 3.87 -10.00
+ 5.39 -9.72
+ 7.57 -6.94
+11.10 -5.28
+15.32 -4.97
+20.05 -4.12
+25.21 -3.54
+30.40 -3.23
+35.64 -3.21
+41.06 -3.20
+46.56 -2.92
+51.31 -2.89
+56.03 -2.89
+60.66 -2.89
+65.19 -2.89
+69.65 -2.88
+75.32 -2.88
+80.19 -2.88
+85.14 -2.61
+90.50 -2.60
+};
+\addplot [very thick, color1]
+table {%
+ 3.79 -10.00
+ 5.28 -10.00
+ 7.45 -7.78
+10.87 -5.55
+15.22 -4.98
+20.24 -3.85
+25.55 -3.27
+30.67 -3.27
+35.41 -3.25
+40.48 -3.24
+45.69 -3.23
+50.91 -3.21
+55.79 -3.20
+61.18 -3.18
+65.92 -3.17
+70.43 -2.88
+75.35 -2.59
+79.35 -2.59
+82.85 -2.59
+86.60 -2.58
+};
+\addplot [very thick, color2]
+table {%
+ 2.57 -10.00
+ 3.63 -10.00
+ 5.02 -8.63
+ 7.58 -6.40
+11.22 -4.43
+15.57 -4.09
+19.66 -3.52
+23.89 -3.23
+28.27 -2.92
+32.66 -2.65
+36.71 -2.62
+40.79 -2.60
+45.37 -2.59
+49.90 -2.57
+54.24 -2.57
+58.76 -2.55
+63.35 -2.55
+67.48 -2.55
+71.52 -2.55
+75.64 -2.55
+};
+\end{axis}
+
+\end{tikzpicture}

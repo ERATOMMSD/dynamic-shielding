@@ -1,0 +1,93 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Undes. eps. [\(\displaystyle \times 100\)]},
+xmin=-4.04, xmax=91.01,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Success Rate},
+ymin=-0.03, ymax= 0.53,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 1.20  0.00
+ 3.81  0.00
+ 7.55  0.00
+11.56  0.03
+15.76  0.07
+20.05  0.13
+24.55  0.17
+29.10  0.17
+33.75  0.20
+38.41  0.20
+43.13  0.20
+47.98  0.20
+52.88  0.23
+57.76  0.27
+62.71  0.27
+67.66  0.27
+72.53  0.27
+77.26  0.27
+81.97  0.27
+86.69  0.27
+};
+\addplot [very thick, color1]
+table {%
+ 0.32  0.00
+ 1.20  0.00
+ 2.49  0.03
+ 3.77  0.10
+ 4.95  0.23
+ 6.02  0.27
+ 7.05  0.27
+ 8.07  0.33
+ 9.04  0.33
+10.01  0.37
+11.02  0.37
+12.06  0.40
+13.12  0.40
+14.23  0.43
+15.30  0.43
+16.30  0.43
+17.27  0.43
+18.30  0.43
+19.28  0.43
+20.33  0.43
+};
+\addplot [very thick, color2]
+table {%
+ 0.28  0.00
+ 0.32  0.00
+ 0.34  0.10
+ 0.35  0.27
+ 0.35  0.37
+ 0.36  0.40
+ 0.36  0.43
+ 0.36  0.47
+ 0.36  0.50
+ 0.36  0.50
+ 0.36  0.50
+ 0.36  0.50
+ 0.36  0.50
+ 0.38  0.50
+ 0.38  0.50
+ 0.38  0.50
+ 0.38  0.50
+ 0.38  0.50
+ 0.38  0.50
+ 0.38  0.50
+};
+\end{axis}
+
+\end{tikzpicture}

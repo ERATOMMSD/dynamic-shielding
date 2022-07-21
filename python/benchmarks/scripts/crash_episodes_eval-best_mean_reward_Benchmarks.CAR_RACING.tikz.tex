@@ -1,0 +1,93 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Undes. eps. [\(\displaystyle \times 10\)]},
+xmin=-0.86, xmax=18.05,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Reward [\(\displaystyle \times 10\)]},
+ymin= 7.57, ymax=99.37,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 0.00 12.40
+ 1.40 46.67
+ 2.11 74.04
+ 2.92 80.40
+ 3.69 85.25
+ 4.61 89.80
+ 5.78 90.17
+ 6.46 91.60
+ 7.24 91.84
+ 8.10 94.07
+ 9.12 94.48
+10.51 94.52
+11.98 94.53
+12.78 94.54
+13.48 94.54
+14.06 94.94
+14.54 94.98
+15.53 94.98
+16.20 95.12
+17.19 95.12
+};
+\addplot [very thick, color1]
+table {%
+ 0.00 11.74
+ 0.95 47.14
+ 1.36 72.75
+ 1.87 81.43
+ 2.33 86.27
+ 3.22 86.91
+ 3.74 87.01
+ 4.77 87.93
+ 5.67 89.17
+ 6.36 91.69
+ 7.49 92.13
+ 8.05 93.42
+ 8.34 93.75
+ 8.93 94.18
+ 9.75 94.31
+10.42 94.77
+11.14 94.77
+11.91 94.81
+12.89 95.16
+13.59 95.16
+};
+\addplot [very thick, color2]
+table {%
+ 0.02 22.46
+ 0.03 46.15
+ 0.06 62.95
+ 0.09 75.82
+ 0.13 83.88
+ 0.36 86.98
+ 0.55 89.17
+ 0.75 91.53
+ 1.04 91.99
+ 1.27 93.41
+ 1.65 94.09
+ 2.06 94.66
+ 2.39 94.67
+ 2.69 94.67
+ 3.00 94.69
+ 3.26 94.69
+ 3.50 94.84
+ 3.70 95.05
+ 3.94 95.18
+ 4.15 95.19
+};
+\end{axis}
+
+\end{tikzpicture}

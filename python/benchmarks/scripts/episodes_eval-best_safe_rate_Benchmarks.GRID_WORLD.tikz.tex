@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Episodes [\(\displaystyle \times 1000\)]},
+xmin= 1.12, xmax=12.11,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Safe Rate},
+ymin= 0.07, ymax= 0.93,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 2.52  0.21
+ 3.76  0.29
+ 4.76  0.50
+ 5.69  0.70
+ 6.61  0.75
+ 7.52  0.80
+ 8.43  0.83
+ 9.31  0.85
+10.19  0.88
+11.06  0.89
+};
+\addplot [very thick, color1]
+table {%
+ 2.55  0.11
+ 3.85  0.21
+ 4.92  0.44
+ 5.92  0.65
+ 6.90  0.74
+ 7.87  0.80
+ 8.83  0.83
+ 9.77  0.85
+10.70  0.85
+11.61  0.86
+};
+\addplot [very thick, color2]
+table {%
+ 1.61  0.20
+ 2.64  0.27
+ 3.54  0.44
+ 4.33  0.63
+ 5.07  0.72
+ 5.75  0.77
+ 6.41  0.79
+ 7.03  0.81
+ 7.65  0.82
+ 8.25  0.83
+};
+\end{axis}
+
+\end{tikzpicture}

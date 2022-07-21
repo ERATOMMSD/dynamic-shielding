@@ -1,0 +1,93 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Steps [\(\displaystyle \times 10000\)]},
+xmin= 0.05, xmax=20.95,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Success Rate},
+ymin=-0.04, ymax= 0.91,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 1.00  0.00
+ 2.00  0.03
+ 3.00  0.37
+ 4.00  0.57
+ 5.00  0.60
+ 6.00  0.70
+ 7.00  0.77
+ 8.00  0.80
+ 9.00  0.80
+10.00  0.80
+11.00  0.83
+12.00  0.83
+13.00  0.83
+14.00  0.83
+15.00  0.83
+16.00  0.83
+17.00  0.83
+18.00  0.83
+19.00  0.87
+20.00  0.87
+};
+\addplot [very thick, color1]
+table {%
+ 1.00  0.00
+ 2.00  0.00
+ 3.00  0.27
+ 4.00  0.53
+ 5.00  0.60
+ 6.00  0.73
+ 7.00  0.80
+ 8.00  0.80
+ 9.00  0.80
+10.00  0.80
+11.00  0.80
+12.00  0.80
+13.00  0.80
+14.00  0.80
+15.00  0.80
+16.00  0.83
+17.00  0.87
+18.00  0.87
+19.00  0.87
+20.00  0.87
+};
+\addplot [very thick, color2]
+table {%
+ 1.00  0.00
+ 2.00  0.00
+ 3.00  0.17
+ 4.00  0.43
+ 5.00  0.67
+ 6.00  0.70
+ 7.00  0.77
+ 8.00  0.80
+ 9.00  0.83
+10.00  0.87
+11.00  0.87
+12.00  0.87
+13.00  0.87
+14.00  0.87
+15.00  0.87
+16.00  0.87
+17.00  0.87
+18.00  0.87
+19.00  0.87
+20.00  0.87
+};
+\end{axis}
+
+\end{tikzpicture}

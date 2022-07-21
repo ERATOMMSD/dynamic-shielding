@@ -1,0 +1,93 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Steps [\(\displaystyle \times 10000\)]},
+xmin= 0.05, xmax=20.95,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Reward [\(\displaystyle \times 10\)]},
+ymin= 7.57, ymax=99.37,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 1.00 12.40
+ 2.00 46.67
+ 3.00 74.04
+ 4.00 80.40
+ 5.00 85.25
+ 6.00 89.80
+ 7.00 90.17
+ 8.00 91.60
+ 9.00 91.84
+10.00 94.07
+11.00 94.48
+12.00 94.52
+13.00 94.53
+14.00 94.54
+15.00 94.54
+16.00 94.94
+17.00 94.98
+18.00 94.98
+19.00 95.12
+20.00 95.12
+};
+\addplot [very thick, color1]
+table {%
+ 1.00 11.74
+ 2.00 47.14
+ 3.00 72.75
+ 4.00 81.43
+ 5.00 86.27
+ 6.00 86.91
+ 7.00 87.01
+ 8.00 87.93
+ 9.00 89.17
+10.00 91.69
+11.00 92.13
+12.00 93.42
+13.00 93.75
+14.00 94.18
+15.00 94.31
+16.00 94.77
+17.00 94.77
+18.00 94.81
+19.00 95.16
+20.00 95.16
+};
+\addplot [very thick, color2]
+table {%
+ 1.00 22.46
+ 2.00 46.15
+ 3.00 62.95
+ 4.00 75.82
+ 5.00 83.88
+ 6.00 86.98
+ 7.00 89.17
+ 8.00 91.53
+ 9.00 91.99
+10.00 93.41
+11.00 94.09
+12.00 94.66
+13.00 94.67
+14.00 94.67
+15.00 94.69
+16.00 94.69
+17.00 94.84
+18.00 95.05
+19.00 95.18
+20.00 95.19
+};
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Wall Time [\(\displaystyle \times 100\)]},
+xmin=-2.53, xmax=66.67,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Reward},
+ymin=-0.04, ymax= 1.15,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 0.61  0.02
+ 1.39  0.14
+ 2.18  0.40
+ 2.97  0.57
+ 3.74  0.72
+ 4.53  0.81
+ 5.30  0.88
+ 6.08  0.97
+ 6.83  1.05
+ 7.61  1.09
+};
+\addplot [very thick, color1]
+table {%
+ 1.35  0.03
+ 3.03  0.15
+ 4.78  0.40
+ 6.54  0.55
+ 8.29  0.69
+10.07  0.83
+11.87  0.87
+13.69  0.94
+15.47  0.97
+17.29  1.00
+};
+\addplot [very thick, color2]
+table {%
+ 1.11  0.03
+ 2.79  0.19
+ 4.88  0.32
+ 7.73  0.45
+11.83  0.53
+17.34  0.59
+24.77  0.65
+34.95  0.68
+47.47  0.73
+63.53  0.78
+};
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,93 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Wall Time [\(\displaystyle \times 1000\)]},
+xmin=-0.46, xmax=17.47,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Reward [\(\displaystyle \times 10\)]},
+ymin= 7.57, ymax=99.37,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 0.35 12.40
+ 0.74 46.67
+ 1.12 74.04
+ 1.49 80.40
+ 1.86 85.25
+ 2.25 89.80
+ 2.62 90.17
+ 3.00 91.60
+ 3.37 91.84
+ 3.75 94.07
+ 4.14 94.48
+ 4.53 94.52
+ 4.92 94.53
+ 5.30 94.54
+ 5.68 94.54
+ 6.06 94.94
+ 6.45 94.98
+ 6.85 94.98
+ 7.24 95.12
+ 7.63 95.12
+};
+\addplot [very thick, color1]
+table {%
+ 0.70 11.74
+ 1.50 47.14
+ 2.30 72.75
+ 3.08 81.43
+ 3.87 86.27
+ 4.67 86.91
+ 5.49 87.01
+ 6.31 87.93
+ 7.14 89.17
+ 7.98 91.69
+ 8.83 92.13
+ 9.65 93.42
+10.48 93.75
+11.35 94.18
+12.19 94.31
+13.08 94.77
+14.03 94.77
+14.88 94.81
+15.79 95.16
+16.66 95.16
+};
+\addplot [very thick, color2]
+table {%
+ 0.48 22.46
+ 1.04 46.15
+ 1.61 62.95
+ 2.20 75.82
+ 2.79 83.88
+ 3.37 86.98
+ 3.97 89.17
+ 4.56 91.53
+ 5.16 91.99
+ 5.77 93.41
+ 6.38 94.09
+ 6.99 94.66
+ 7.64 94.67
+ 8.28 94.67
+ 8.94 94.69
+ 9.62 94.69
+10.29 94.84
+11.00 95.05
+11.73 95.18
+12.50 95.19
+};
+\end{axis}
+
+\end{tikzpicture}

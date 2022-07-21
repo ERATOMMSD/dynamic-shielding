@@ -1,0 +1,90 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Steps [\(\displaystyle \times 10000\)]},
+xmin= 0.10, xmax=19.90,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Safe Rate},
+ymin= 0.02, ymax= 1.05,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 1.00  0.13
+ 2.00  0.13
+ 3.00  0.17
+ 4.00  0.17
+ 5.00  0.33
+ 6.00  0.43
+ 7.00  0.53
+ 8.00  0.63
+ 9.00  0.67
+10.00  0.70
+11.00  0.80
+12.00  0.83
+13.00  0.87
+14.00  0.97
+15.00  0.97
+16.00  0.97
+17.00  1.00
+18.00  1.00
+19.00  1.00
+};
+\addplot [very thick, color1]
+table {%
+ 1.00  0.07
+ 2.00  0.10
+ 3.00  0.10
+ 4.00  0.17
+ 5.00  0.30
+ 6.00  0.37
+ 7.00  0.50
+ 8.00  0.57
+ 9.00  0.67
+10.00  0.73
+11.00  0.80
+12.00  0.90
+13.00  0.93
+14.00  0.93
+15.00  0.93
+16.00  0.97
+17.00  0.97
+18.00  0.97
+19.00  1.00
+};
+\addplot [very thick, color2]
+table {%
+ 1.00  0.10
+ 2.00  0.13
+ 3.00  0.20
+ 4.00  0.37
+ 5.00  0.43
+ 6.00  0.63
+ 7.00  0.77
+ 8.00  0.87
+ 9.00  0.87
+10.00  0.97
+11.00  0.97
+12.00  0.97
+13.00  1.00
+14.00  1.00
+15.00  1.00
+16.00  1.00
+17.00  1.00
+18.00  1.00
+19.00  1.00
+};
+\end{axis}
+
+\end{tikzpicture}

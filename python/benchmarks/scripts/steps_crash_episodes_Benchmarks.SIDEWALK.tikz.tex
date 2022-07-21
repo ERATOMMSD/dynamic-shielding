@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Steps [\(\displaystyle \times 10000\)]},
+xmin= 0.55, xmax=10.45,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Undes. eps. [\(\displaystyle \times 10\)]},
+ymin= 3.67, ymax=44.12,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 1.00  6.57
+ 2.00 16.65
+ 3.00 22.73
+ 4.00 26.61
+ 5.00 29.35
+ 6.00 31.26
+ 7.00 32.77
+ 8.00 34.31
+ 9.00 35.59
+10.00 36.76
+};
+\addplot [very thick, color1]
+table {%
+ 1.00  6.33
+ 2.00 17.57
+ 3.00 25.46
+ 4.00 31.00
+ 5.00 34.11
+ 6.00 36.03
+ 7.00 37.63
+ 8.00 39.26
+ 9.00 40.90
+10.00 42.28
+};
+\addplot [very thick, color2]
+table {%
+ 1.00  5.51
+ 2.00 12.05
+ 3.00 15.76
+ 4.00 18.37
+ 5.00 20.27
+ 6.00 21.81
+ 7.00 23.16
+ 8.00 24.64
+ 9.00 25.95
+10.00 27.30
+};
+\end{axis}
+
+\end{tikzpicture}

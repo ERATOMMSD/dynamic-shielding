@@ -1,0 +1,93 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Episodes [\(\displaystyle \times 100\)]},
+xmin=-1.82, xmax=94.90,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Undes. eps. [\(\displaystyle \times 100\)]},
+ymin= 1.37, ymax=15.92,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 3.87  3.38
+ 5.39  3.56
+ 7.57  3.62
+11.10  3.71
+15.32  3.91
+20.05  4.23
+25.21  4.79
+30.40  5.62
+35.64  6.29
+41.06  7.15
+46.56  8.18
+51.31  8.62
+56.03  9.35
+60.66  9.87
+65.19 10.56
+69.65 10.99
+75.32 12.71
+80.19 13.34
+85.14 13.73
+90.50 14.86
+};
+\addplot [very thick, color1]
+table {%
+ 3.79  3.29
+ 5.28  3.48
+ 7.45  3.56
+10.87  3.64
+15.22  3.85
+20.24  4.25
+25.55  5.21
+30.67  6.08
+35.41  6.83
+40.48  7.77
+45.69  8.79
+50.91 10.27
+55.79 10.85
+61.18 12.39
+65.92 13.04
+70.43 13.46
+75.35 14.24
+79.35 14.74
+82.85 14.89
+86.60 15.26
+};
+\addplot [very thick, color2]
+table {%
+ 2.57  2.03
+ 3.63  2.11
+ 5.02  2.15
+ 7.58  2.20
+11.22  2.28
+15.57  2.43
+19.66  2.67
+23.89  2.84
+28.27  3.05
+32.66  3.31
+36.71  3.48
+40.79  3.65
+45.37  3.81
+49.90  3.95
+54.24  4.00
+58.76  4.22
+63.35  4.51
+67.48  4.65
+71.52  4.73
+75.64  4.78
+};
+\end{axis}
+
+\end{tikzpicture}

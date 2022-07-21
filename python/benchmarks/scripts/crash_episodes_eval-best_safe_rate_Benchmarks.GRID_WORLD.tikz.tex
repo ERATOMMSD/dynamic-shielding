@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Undes. eps. [\(\displaystyle \times 100\)]},
+xmin=13.30, xmax=75.93,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Safe Rate},
+ymin= 0.07, ymax= 0.93,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+25.21  0.21
+37.49  0.29
+46.86  0.50
+53.15  0.70
+57.29  0.75
+60.42  0.80
+63.13  0.83
+65.50  0.85
+67.71  0.88
+69.83  0.89
+};
+\addplot [very thick, color1]
+table {%
+25.53  0.11
+38.37  0.21
+48.43  0.44
+55.43  0.65
+59.99  0.74
+63.36  0.80
+66.18  0.83
+68.66  0.85
+70.96  0.85
+73.08  0.86
+};
+\addplot [very thick, color2]
+table {%
+16.15  0.20
+26.34  0.27
+34.88  0.44
+40.81  0.63
+44.75  0.72
+47.61  0.77
+50.03  0.79
+52.21  0.81
+54.24  0.82
+56.17  0.83
+};
+\end{axis}
+
+\end{tikzpicture}

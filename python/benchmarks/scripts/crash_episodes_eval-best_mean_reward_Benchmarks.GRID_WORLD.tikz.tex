@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Undes. eps. [\(\displaystyle \times 100\)]},
+xmin=13.30, xmax=75.93,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Reward},
+ymin=-1.14, ymax= 0.64,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+25.21 -1.03
+37.49 -0.93
+46.86 -0.34
+53.15  0.10
+57.29  0.22
+60.42  0.32
+63.13  0.39
+65.50  0.43
+67.71  0.48
+69.83  0.50
+};
+\addplot [very thick, color1]
+table {%
+25.53 -1.06
+38.37 -0.92
+48.43 -0.40
+55.43  0.09
+59.99  0.31
+63.36  0.44
+66.18  0.51
+68.66  0.55
+70.96  0.55
+73.08  0.56
+};
+\addplot [very thick, color2]
+table {%
+16.15 -1.04
+26.34 -0.93
+34.88 -0.51
+40.81 -0.11
+44.75  0.07
+47.61  0.14
+50.03  0.19
+52.21  0.23
+54.24  0.25
+56.17  0.26
+};
+\end{axis}
+
+\end{tikzpicture}

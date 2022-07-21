@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{ 0.12, 0.47, 0.71}
+\definecolor{color1}{rgb}{ 1.00, 0.50, 0.05}
+\definecolor{color2}{rgb}{ 0.17, 0.63, 0.17}
+
+\begin{axis}[
+height=3.3cm,
+tick align=outside,
+tick pos=left,
+width=3.3cm,
+x grid style={white!69.02!black},
+xlabel={Episodes [\(\displaystyle \times 100\)]},
+xmin= 0.35, xmax=14.99,
+xtick style={color=black},
+y grid style={white!69.02!black},
+ylabel={Reward},
+ymin=-0.04, ymax= 1.15,
+ytick style={color=black}
+]
+\addplot [very thick, color0]
+table {%
+ 1.10  0.02
+ 2.71  0.14
+ 4.13  0.40
+ 5.51  0.57
+ 6.90  0.72
+ 8.30  0.81
+ 9.73  0.88
+11.20  0.97
+12.69  1.05
+14.20  1.09
+};
+\addplot [very thick, color1]
+table {%
+ 1.08  0.03
+ 2.75  0.15
+ 4.24  0.40
+ 5.69  0.55
+ 7.06  0.69
+ 8.45  0.83
+ 9.88  0.87
+11.34  0.94
+12.83  0.97
+14.32  1.00
+};
+\addplot [very thick, color2]
+table {%
+ 1.01  0.03
+ 2.14  0.19
+ 3.12  0.32
+ 4.06  0.45
+ 5.01  0.53
+ 5.98  0.59
+ 6.97  0.65
+ 7.99  0.68
+ 9.03  0.73
+10.09  0.78
+};
+\end{axis}
+
+\end{tikzpicture}
