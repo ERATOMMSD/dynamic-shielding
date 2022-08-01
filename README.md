@@ -79,10 +79,10 @@ import sys; sys.path.append('/usr/local/lib/python3.6/site-packages/');
 Contributors (to the source code)
 ---------------------------------
 
-- [Masaki Waga](https://maswag.github.io/)
-- [Ezequiel Castellano](https://www.linkedin.com/in/ezequiel-castellano-7076962b/?originalSubdomain=jp)
-- [Sasinee Pruekprasert](https://psasinee.github.io/)
-- [Stefan Klikovits](https://klikovits.net/) 
+- [Masaki Waga](https://maswag.github.io/) [@MasWag](https://github.com/MasWag)
+- [Ezequiel Castellano](https://www.linkedin.com/in/ezequiel-castellano-7076962b/?originalSubdomain=jp) [@ezecastellano](https://github.com/ezecastellano)
+- [Sasinee Pruekprasert](https://psasinee.github.io/) [@psasinee](https://github.com/psasinee)
+- [Stefan Klikovits](https://klikovits.net/) [@stklik](https://github.com/stklik)
 
 Acknowledgments
 ---------------
