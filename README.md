@@ -84,6 +84,35 @@ Contributors (to the source code)
 - [Sasinee Pruekprasert](https://psasinee.github.io/) [@psasinee](https://github.com/psasinee)
 - [Stefan Klikovits](https://klikovits.net/) [@stklik](https://github.com/stklik)
 
+Citation
+--------
+
+If you want to cite our paper, please use the following .bib file.
+
+```
+@inproceedings{WCPKTH22,
+  author    = {Masaki Waga and
+               Ezequiel Castellano and
+               Sasinee Pruekprasert and
+               Stefan Klikovits and
+               Toru Takisaka and
+               Ichiro Hasuo},
+  editor    = {Ahmed Bouajjani and
+               Luk{\'{a}}s Hol{\'{\i}}k and
+               Zhilin Wu},
+  title     = {Dynamic Shielding for Reinforcement Learning in Black-Box Environments},
+  booktitle = {Automated Technology for Verification and Analysis - 20th International
+               Symposium, {ATVA} 2022, Virtual Event, October 25-28, 2022, Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13505},
+  pages     = {25--41},
+  publisher = {Springer},
+  year      = {2022},
+  url       = {https://doi.org/10.1007/978-3-031-19992-9\_2},
+  doi       = {10.1007/978-3-031-19992-9\_2}
+}
+```
+
 Acknowledgments
 ---------------
 

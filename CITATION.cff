@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Waga"
+  given-names: "Masaki"
+  orcid: "https://orcid.org/0000-0001-9360-7490"
+- family-names: "Castellano"
+  given-names: "Ezequiel"
+  orcid: "https://orcid.org/0000-0002-9604-9997"
+- family-names: "Pruekprasert"
+  given-names: "Sasinee"
+  orcid: "https://orcid.org/0000-0002-5929-9014"
+- family-names: "Klikovits"
+  given-names: "Stefan"
+  orcid: "https://orcid.org/0000-0003-4212-7029"
+title: "Dynamic Shielding"
+version: ATVA2022
+doi: 10.5281/zenodo.6906673
+date-released: 2022-07-26
+url: "https://github.com/ERATOMMSD/dynamic-shielding"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Waga"
+    given-names: "Masaki"
+    orcid: "https://orcid.org/0000-0001-9360-7490"
+  - family-names: "Castellano"
+    given-names: "Ezequiel"
+    orcid: "https://orcid.org/0000-0002-9604-9997"
+  - family-names: "Pruekprasert"
+    given-names: "Sasinee"
+    orcid: "https://orcid.org/0000-0002-5929-9014"
+  - family-names: "Klikovits"
+    given-names: "Stefan"
+    orcid: "https://orcid.org/0000-0003-4212-7029"
+  - family-names: "Takisaka"
+    given-names: "Toru"
+    orcid: "https://orcid.org/0000-0002-5046-7480"
+  - family-names: "Hasuo"
+    given-names: "Ichiro"
+    orcid: "https://orcid.org/0000-0002-8300-4650"
+  doi: "10.1007/978-3-031-19992-9_2"
+  booktitle: "Automated Technology for Verification and Analysis - 20th International Symposium, {ATVA} 2022, Virtual Event, October 25-28, 2022, Proceedings"
+  start: 25 # First page number
+  end: 41 # Last page number
+  publisher: "Springer"
+  title: "Dynamic Shielding for Reinforcement Learning in Black-Box Environments"
+  series: "Lecture Notes in Computer Science"
+  volume: 13505
+  year: 2022
